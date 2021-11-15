@@ -286,55 +286,55 @@ func solution(_ a:Int, _ b:Int) -> String {
     
     특정 프로퍼티를 계속 관찰하고 있다가 프로퍼티의 값이 변경되면 알아차리고 호출됨.
     
-        1. willSet 옵저버
+    1. willSet 옵저버
         
-        willSet 옵저버를 구현해 둔 프로퍼티에 값을 대입하면 그 값이 프로퍼티에 대입되기 직전에 willSet 옵저버가 실행된다.
+    willSet 옵저버를 구현해 둔 프로퍼티에 값을 대입하면 그 값이 프로퍼티에 대입되기 직전에 willSet 옵저버가 실행된다.
         
-        ```swift
-        var <프로퍼티 명> : <타입> [ = <초깃값> ] {
-            willSet [ (<인자명> ) ] {
-                <프로퍼티 값이 변경되기 전에 실행할 내용>
-            }
-        } //[]의 인자명은 생략해도 되고, 생략되있으면 newValue라는 이름으로 매개상수 형태로 전달됨
-        ```
+    ```swift
+    var <프로퍼티 명> : <타입> [ = <초깃값> ] {
+        willSet [ (<인자명> ) ] {
+            <프로퍼티 값이 변경되기 전에 실행할 내용>
+        }
+    } //[]의 인자명은 생략해도 되고, 생략되있으면 newValue라는 이름으로 매개상수 형태로 전달됨
+    ```
         
-        2. didSet 옵저버
-        
-        didSet옵저버를 구현해 둔 프로퍼티에 값을 대입하면 그 값이 프로퍼티에 대입되고 난 직후에 didSet 옵저버가 실행된다.
-        
-        ```swift
-        var <프로퍼티 명> : <타입> [ = <초깃값> ] {
-            didset [ (<인자명> ) ] {
-                <프로퍼티 값이 변경되고 난 후에 실행할 내용>
-            }
-        } //[]의 인자명은 생략해도 되고, 새로 할당된 값이 아닌 기존에 저장되어있던 값이 매개상수 형태로 전달됨. 생략되어있다면 oldValue라는 이름으로 전달.
-        ```
+    2. didSet 옵저버
+    
+    didSet옵저버를 구현해 둔 프로퍼티에 값을 대입하면 그 값이 프로퍼티에 대입되고 난 직후에 didSet 옵저버가 실행된다.
+    
+    ```swift
+    var <프로퍼티 명> : <타입> [ = <초깃값> ] {
+        didset [ (<인자명> ) ] {
+            <프로퍼티 값이 변경되고 난 후에 실행할 내용>
+        }
+    } //[]의 인자명은 생략해도 되고, 새로 할당된 값이 아닌 기존에 저장되어있던 값이 매개상수 형태로 전달됨. 생략되어있다면 oldValue라는 이름으로 전달.
+    ```
         
     
-        ```swift
-        struct Job {
-            var income: Int = 0 {
-                willSet(newIncome) {
-                    print("이번 달 월급은 \(newIncome)원 입니다. ")
-                }
-                didSet {
-                    if income > oldValue {
-                        print("월급이 \(income - oldValue)원 증가했습니다.")
-                    } else {
-                        print("원급이 삭감되었습니다.")
-                    }
+    ```swift
+    struct Job {
+        var income: Int = 0 {
+            willSet(newIncome) {
+                print("이번 달 월급은 \(newIncome)원 입니다. ")
+            }
+            didSet {
+                if income > oldValue {
+                    print("월급이 \(income - oldValue)원 증가했습니다.")
+                } else {
+                    print("원급이 삭감되었습니다.")
                 }
             }
         }
-        var myjob = Job(income: 1000000)
-        myjob.income = 2000000
-        /* 이번 달 월급은 2000000원 입니다.
-            월급이 1000000원 증가했습니다." */
-        ```
+    }
+    var myjob = Job(income: 1000000)
+    myjob.income = 2000000
+    /* 이번 달 월급은 2000000원 입니다.
+        월급이 1000000원 증가했습니다." */
+    ```
     
-        myjob 인스턴스의 income 프로퍼티를 변경 시켜줄 때 다음과 같은 흐름으로 실행된다.
-
-        프로퍼티 값 변경 시작 → willSet구문 실행 → 프로퍼티 값 변경 → didSet구문 실행
+    myjob 인스턴스의 income 프로퍼티를 변경 시켜줄 때 다음과 같은 흐름으로 실행된다.
+    
+    프로퍼티 값 변경 시작 → willSet구문 실행 → 프로퍼티 값 변경 → didSet구문 실행
     
     4. 타입 프로퍼티
     
