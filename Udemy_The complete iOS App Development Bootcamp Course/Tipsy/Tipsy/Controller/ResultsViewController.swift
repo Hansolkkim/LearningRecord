@@ -23,6 +23,4 @@ class ResultsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
-
 }
