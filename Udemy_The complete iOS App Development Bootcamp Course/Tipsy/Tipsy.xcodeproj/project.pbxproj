@@ -14,6 +14,8 @@
 		022D7D7927709A3A00507439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022D7D7827709A3A00507439 /* Assets.xcassets */; };
 		022D7D7C27709A3A00507439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022D7D7A27709A3A00507439 /* LaunchScreen.storyboard */; };
 		022D7D862770A8CD00507439 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7D852770A8CD00507439 /* ResultsViewController.swift */; };
+		022D7D882770B1E000507439 /* TipBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7D872770B1E000507439 /* TipBrain.swift */; };
+		022D7D8B2770B75300507439 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7D8A2770B75300507439 /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		022D7D7B27709A3A00507439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022D7D7D27709A3A00507439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		022D7D852770A8CD00507439 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		022D7D872770B1E000507439 /* TipBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBrain.swift; sourceTree = "<group>"; };
+		022D7D8A2770B75300507439 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,9 @@
 			children = (
 				022D7D6F27709A3800507439 /* AppDelegate.swift */,
 				022D7D7127709A3800507439 /* SceneDelegate.swift */,
-				022D7D842770A8B600507439 /* Controller */,
+				022D7D892770B1E700507439 /* Model */,
 				022D7D832770A8AC00507439 /* View */,
+				022D7D842770A8B600507439 /* Controller */,
 				022D7D7827709A3A00507439 /* Assets.xcassets */,
 				022D7D7A27709A3A00507439 /* LaunchScreen.storyboard */,
 				022D7D7D27709A3A00507439 /* Info.plist */,
@@ -84,6 +89,15 @@
 				022D7D852770A8CD00507439 /* ResultsViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		022D7D892770B1E700507439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				022D7D872770B1E000507439 /* TipBrain.swift */,
+				022D7D8A2770B75300507439 /* Tip.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +174,9 @@
 				022D7D7427709A3800507439 /* CalculateViewController.swift in Sources */,
 				022D7D7027709A3800507439 /* AppDelegate.swift in Sources */,
 				022D7D7227709A3800507439 /* SceneDelegate.swift in Sources */,
+				022D7D8B2770B75300507439 /* Tip.swift in Sources */,
 				022D7D862770A8CD00507439 /* ResultsViewController.swift in Sources */,
+				022D7D882770B1E000507439 /* TipBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

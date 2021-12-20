@@ -15,7 +15,7 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var twentyPctButton: UIButton!
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    var tip: Float = 0
+    var tipBrain = TipBrain()
     var numberOfPeople = 0
     
     @IBAction func tipChanged(_ sender: UIButton) {
@@ -26,25 +26,24 @@ class CalculateViewController: UIViewController {
         twentyPctButton.isSelected = false
         
         sender.isSelected = true
-        
-        tip =  Float(Int(String(Array(sender.currentTitle!)[0]))!)/Float(10)
+        tipBrain.setTip(sender.currentTitle!)
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         splitNumberLabel.text = String(format: "%.0f", sender.value)
-        numberOfPeople = Int(sender.value)
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-//        print(Float(billTextField.text!)! * (1+tip) / Float(numberOfPeople))
+        tipBrain.calculateTotalBill(numberOfPeople : splitNumberLabel.text!, bill : billTextField.text!)
         self.performSegue(withIdentifier: "goToResult", sender: self)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultsViewController
-            destinationVC.calculatedTip = Float(billTextField.text!)! * (1+tip) / Float(numberOfPeople)
+            destinationVC.calculatedTip = tipBrain.totalBillPerPerson
+            destinationVC.numberOfPeople = tipBrain.numberOfPeople
+            destinationVC.tip = tipBrain.tip
         }
     }
 }
