@@ -12,6 +12,6 @@ protocol CoinManagerDelegate {
 
 import Foundation
 
-struct CurrencyData: Decodable {
+struct CoinData: Decodable {
     let rate: Double
 }

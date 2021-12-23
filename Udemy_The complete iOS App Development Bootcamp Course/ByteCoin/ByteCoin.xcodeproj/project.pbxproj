@@ -14,7 +14,7 @@
 		0238B29F27743FF4006BF19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0238B29E27743FF4006BF19A /* Assets.xcassets */; };
 		0238B2A227743FF4006BF19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0238B2A027743FF4006BF19A /* LaunchScreen.storyboard */; };
 		0238B2AC277442AD006BF19A /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238B2AB277442AD006BF19A /* CoinManager.swift */; };
-		0238B2B1277447F5006BF19A /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238B2B0277447F5006BF19A /* CurrencyData.swift */; };
+		0238B2B1277447F5006BF19A /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238B2B0277447F5006BF19A /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		0238B2A127743FF4006BF19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0238B2A327743FF4006BF19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0238B2AB277442AD006BF19A /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
-		0238B2B0277447F5006BF19A /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		0238B2B0277447F5006BF19A /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0238B2AB277442AD006BF19A /* CoinManager.swift */,
-				0238B2B0277447F5006BF19A /* CurrencyData.swift */,
+				0238B2B0277447F5006BF19A /* CoinData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0238B2B1277447F5006BF19A /* CurrencyData.swift in Sources */,
+				0238B2B1277447F5006BF19A /* CoinData.swift in Sources */,
 				0238B2AC277442AD006BF19A /* CoinManager.swift in Sources */,
 				0238B29A27743FF3006BF19A /* ViewController.swift in Sources */,
 				0238B29627743FF3006BF19A /* AppDelegate.swift in Sources */,

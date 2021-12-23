@@ -36,7 +36,7 @@ struct CoinManager {
     func parseJSON(_ currencyData: Data) -> Double? {
         let decoder = JSONDecoder()
         do {
-            let decodedData = try decoder.decode(CurrencyData.self, from: currencyData)
+            let decodedData = try decoder.decode(CoinData.self, from: currencyData)
             let currency = decodedData.rate
             return currency
         } catch {
