@@ -281,16 +281,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uXz-Nf-gpE" customClass="ChatView">
                                 <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="SVM-Zb-JaW">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SVM-Zb-JaW" id="YjS-4H-7ub">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecH-fQ-tLw">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
@@ -351,7 +341,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="pfB-4P-uK5" id="bRZ-Na-cSX"/>
-                        <outlet property="tableView" destination="uXz-Nf-gpE" id="g5a-Oh-rY1"/>
+                        <outlet property="tableView" destination="uXz-Nf-gpE" id="lbu-UW-CHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdV-2F-fDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

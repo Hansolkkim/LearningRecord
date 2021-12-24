@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0219A88F27759CDE0046F58C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219A88E27759CDE0046F58C /* Message.swift */; };
+		0219A8932775A60B0046F58C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219A8912775A60B0046F58C /* MessageCell.swift */; };
+		0219A8942775A60B0046F58C /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0219A8922775A60B0046F58C /* MessageCell.xib */; };
 		021E8EC72774945C00E3C699 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 021E8EC62774945C00E3C699 /* GoogleService-Info.plist */; };
 		021E8EC92774A51A00E3C699 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E8EC82774A51A00E3C699 /* constant.swift */; };
 		0238B2BF27745C14006BF19A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238B2BE27745C14006BF19A /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0219A88E27759CDE0046F58C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0219A8912775A60B0046F58C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		0219A8922775A60B0046F58C /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		021E8EC62774945C00E3C699 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		021E8EC82774A51A00E3C699 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		0238B2BB27745C14006BF19A /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0219A89027759CE20046F58C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0219A88E27759CDE0046F58C /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0238B2B227745C14006BF19A = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +89,9 @@
 			children = (
 				0238B2BE27745C14006BF19A /* AppDelegate.swift */,
 				0238B2C027745C14006BF19A /* SceneDelegate.swift */,
-				0238B2D227745D06006BF19A /* Controller */,
+				0219A89027759CE20046F58C /* Model */,
 				0238B2D327745D19006BF19A /* View */,
+				0238B2D227745D06006BF19A /* Controller */,
 				0238B2C727745C15006BF19A /* Assets.xcassets */,
 				0238B2C927745C15006BF19A /* LaunchScreen.storyboard */,
 				0238B2CC27745C15006BF19A /* Info.plist */,
@@ -101,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				0238B2C427745C14006BF19A /* Main.storyboard */,
+				0219A8912775A60B0046F58C /* MessageCell.swift */,
+				0219A8922775A60B0046F58C /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0219A8942775A60B0046F58C /* MessageCell.xib in Resources */,
 				0238B2CB27745C15006BF19A /* LaunchScreen.storyboard in Resources */,
 				021E8EC72774945C00E3C699 /* GoogleService-Info.plist in Resources */,
 				0238B2C827745C15006BF19A /* Assets.xcassets in Resources */,
@@ -243,8 +261,10 @@
 				0238B2BF27745C14006BF19A /* AppDelegate.swift in Sources */,
 				0238B2C127745C14006BF19A /* SceneDelegate.swift in Sources */,
 				0238B2D727745E25006BF19A /* LoginViewController.swift in Sources */,
+				0219A88F27759CDE0046F58C /* Message.swift in Sources */,
 				0238B2D927745E31006BF19A /* ChatViewController.swift in Sources */,
 				0238B2D527745E10006BF19A /* RegisterViewController.swift in Sources */,
+				0219A8932775A60B0046F58C /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
