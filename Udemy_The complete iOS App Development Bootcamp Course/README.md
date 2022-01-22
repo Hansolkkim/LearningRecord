@@ -25,4 +25,6 @@ Udemy's The Complete iOS App Development Bootcamp 강의에서 만든 Project
 
 ## 강의 내용 정리
 
-* [Sec2. Xcode Storyboards and Interface Builder](https://github.com/Hansolkkim/LearningRecord/issues/1)
+* [Section2. Xcode Storyboards and Interface Builder](https://github.com/Hansolkkim/LearningRecord/issues/1)
+* [Section4. Swift Programming Baics - Collections, Constants&Variables](https://github.com/Hansolkkim/LearningRecord/issues/2)
+
