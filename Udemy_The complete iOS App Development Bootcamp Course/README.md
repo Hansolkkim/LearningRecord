@@ -29,3 +29,5 @@ Udemy's The Complete iOS App Development Bootcamp 강의에서 만든 Project
 * [Section4. Swift Programming Baics - Collections, Constants&Variables](https://github.com/Hansolkkim/LearningRecord/issues/2)
 * [Section6. Auto Layout and Responsive UIs](https://github.com/Hansolkkim/LearningRecord/issues/3)
 * [Section8. Intermediate Swift Programming - Control Flow and Optional](https://github.com/Hansolkkim/LearningRecord/issues/4)
+
+* [Section9. iOS App Design Pattern and Code Structuring](https://github.com/Hansolkkim/LearningRecord/issues/5)
