@@ -31,3 +31,4 @@ Udemy's The Complete iOS App Development Bootcamp 강의에서 만든 Project
 * [Section8. Intermediate Swift Programming - Control Flow and Optional](https://github.com/Hansolkkim/LearningRecord/issues/4)
 * [Section9. iOS App Design Pattern and Code Structuring](https://github.com/Hansolkkim/LearningRecord/issues/5)
 * [Section11. Advanced Swift Programming - Classes, Inheritance & Advanced Optionals](https://github.com/Hansolkkim/LearningRecord/issues/6)
+* [Section13. Networking, JSON Parsing, APIs and Core Location](https://github.com/Hansolkkim/LearningRecord/issues/15)
