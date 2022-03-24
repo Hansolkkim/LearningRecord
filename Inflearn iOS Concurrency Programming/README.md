@@ -22,11 +22,11 @@
 
 ### GCD - 3. 디스패치큐(GCD) 사용시 주의해야할 사항
 
-* [반드시 메인큐에서 처리해야하는 작업]()
-* [sync 메서드에 대한 주의 사항]()
-* [weak, strong 캡처 주의]()
-* [컴플리션핸들러의 존재이유]()
-* [동기적함수를 비동기함수처럼 만드는 방법]()
+* [반드시 메인큐에서 처리해야하는 작업](https://github.com/Hansolkkim/LearningRecord/issues/16)
+* [sync 메서드에 대한 주의 사항](https://github.com/Hansolkkim/LearningRecord/issues/17)
+* [weak, strong 캡처 주의](https://github.com/Hansolkkim/LearningRecord/issues/18)
+* [컴플리션핸들러의 존재이유](https://github.com/Hansolkkim/LearningRecord/issues/19)
+* [동기적함수를 비동기함수처럼 만드는 방법](https://github.com/Hansolkkim/LearningRecord/issues/20)
 
 
 
