@@ -27,6 +27,7 @@
 * [weak, strong 캡처 주의](https://github.com/Hansolkkim/LearningRecord/issues/18)
 * [컴플리션핸들러의 존재이유](https://github.com/Hansolkkim/LearningRecord/issues/19)
 * [동기적함수를 비동기함수처럼 만드는 방법](https://github.com/Hansolkkim/LearningRecord/issues/20)
+* [번외) 캡처리스트의 [weak self]에 대한 이해](https://github.com/Hansolkkim/LearningRecord/issues/21)
 
 
 
