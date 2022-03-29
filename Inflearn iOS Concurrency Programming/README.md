@@ -33,10 +33,10 @@
 
 ### GCD - 4. 디스패치 그룹
 
-* [디스패치 그룹의 개념]()
-* [디스패치 그룹의 사용 (비동기 디스패치 그룹)]()
-* [(참고)Dispatch Work Item(디스패치 워크 아이템)]()
-* [(심화)Dispatch Semaphore(세마포어)에 대한 이해]()
+* [디스패치 그룹의 개념](https://github.com/Hansolkkim/LearningRecord/issues/22)
+* [디스패치 그룹의 사용 (비동기 디스패치 그룹)](https://github.com/Hansolkkim/LearningRecord/issues/23)
+* [(참고)Dispatch Work Item(디스패치 워크 아이템)](https://github.com/Hansolkkim/LearningRecord/issues/24)
+* [(심화)Dispatch Semaphore(세마포어)에 대한 이해](https://github.com/Hansolkkim/LearningRecord/issues/25)
 
 
 
